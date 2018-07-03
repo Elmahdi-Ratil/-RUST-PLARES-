@@ -55,7 +55,6 @@ client.on("message", message => {
 ('+Mute ' , 'لاعطاء ميوت شات مع سبب')
 ('UnMute ' , 'لفك ميوت شات')
 ('+clear ' , 'لمسح الشات حد اقصى 200رساله') 
-('+serooms' , 'انشاء رومات جاهزه')
 ('+seroles' , 'انشاء رتب جاهزه')
 ('+removerooms' , 'لازالة جميع الرومات')
 ('+createcolors' , 'لانشاء 137 الوان')
@@ -211,7 +210,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '+invite') {
-      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=457536673333379083&permissions=8&scope=bot').catch(e => console.log(e.stack));
+      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=463686965951201280&permissions=8&scope=bot').catch(e => console.log(e.stack));
 
     }
    } 
@@ -702,38 +701,6 @@ client.on('message', message => {
  
 });
 
-client.on('message', message => {
-    if (message.content === "+serooms") {
-    if(!message.channel.guild) return message.channel.send('**This Command Only For Servers !**')
-            if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.channel.send(`**${message.author.username} You Dont Have** ``MANAGE_CHANNELS`` **Premission**`);
-
-		
-     message.guild.createChannel('「 O W N E R 」', 'voice')
-	 message.guild.createChannel('「 C O - L E A D E R 」', 'voice')
-	 message.guild.createChannel('「ADMINSTRATOR」', 'voice')
-	 message.guild.createChannel('𖦲₁PARTY | بارتي𖦲', 'voice')
-	 message.guild.createChannel('𖦲₂PARTY | بارتي𖦲', 'voice')
-	 message.guild.createChannel('𖦲₂PARTY | بارتي𖦲', 'voice')
-	 message.guild.createChannel('✬ʝuşτ-1✬', 'voice')
- message.guild.createChannel('✬ʝuşτ-2✬', 'voice')
-	 message.guild.createChannel('✬ʝuşτ-3✬', 'voice')
-	 message.guild.createChannel('✬ʝuşτ-4✬', 'voice')
-	 message.guild.createChannel('✬ʝuşτ-5✬', 'voice')
-	 message.guild.createChannel('😴sleep', 'voice')
-	 	 message.guild.createChannel('༆كَبّـآرَ آلَشّـخٌـصِـيّآتُ༆', 'voice')
-	 message.guild.createChannel('welcome', 'text')
-	 message.guild.createChannel('info', 'text')
-	 message.guild.createChannel('bot', 'text')
-	 message.guild.createChannel('chat', 'text')
-	 message.guild.createChannel('Youtube', 'text')
-	 message.guild.createChannel('bo7', 'text')
-	 message.guild.createChannel('party', 'text')
-	 message.guild.createChannel('pic', 'text')
-
-
-message.channel.sendMessage('**الرجاء الانتظار ريث ما يتم صناعة السيرفر**')
-}
-});
 
 client.on('message', message => {
 const prefix = '+'	
